@@ -1,0 +1,25 @@
+.button a{
+    background: blue;
+    border: solid blue 3px; 
+}
+.item{
+    border: solid blue 3px;
+
+}
+#section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color:#EB12EB;
+    color: white;
+
+
+}
+.grid{
+    display: grid; 
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-gap:30px; 
+}
