@@ -2,20 +2,20 @@
 //được sd để truy xuất  HTML (hoặc cáccấu trúc dạng thẻ )
 // thuoewfng đc tổ chức dạng cây
 //-Quan hệ: cha- con; anh-em
-//id: định danh cho note ở trên cây DOM
+//id: định danh cho node ở trên cây DOM
 
 // Query: truy xuất
-console.log(documentt.getElementById("btnClickMe"));
-console.log(documentt.getElementById("myParagraph"));
+console.log(document.getElementById("btnClickMe"));
+console.log(document.getElementById("myParagraph"));
 //sử dụng CSS selector. (cần # cho id và . cho class)
 //
-console.log(documentt.querySelecttor("#btnClickMe")); // chỉ truy cập thẻ đầu tiên
-console.log(documentt.querySelecttor("#btnClickMe"));
-console.log(documentt.querySelecttorAll("#btnClickMe")); // truy cập bị lỗi
+console.log(document.querySelector("#btnClickMe")); // chỉ truy cập thẻ đầu tiên
+console.log(document.querySelector("#btnClickMe"));
+console.log(document.querySelectorAll("#btnClickMe")); // truy cập bị lỗi. Nếu muốn truy cập tất cả thì sử dụng vòng lặp for.
 
 
 // sử dụng class nhận lại nhiều thẻ(elements)
-console.log(documentt.getElementsByClassName("#btnClickMe"));
+console.log(document.getElementsByClassName("#btnClickMe"));
 
 const btnClickMe =document.getElementById("btnClickMe");
 console.log(btnClickMe.id);

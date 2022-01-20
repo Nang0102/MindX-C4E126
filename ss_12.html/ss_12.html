@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Events</title>
+</head>
+<body>
+    <!-- <button onclick= "sayHello()">ClickMe</button> -->
+    <button onclick= "this.innerHTML">ClickMe</button>
+    <button id ="btnClickMe2">Click Me 2</button>
+    <button id ="btnClickMe3" >Click Me 3</button>
+    <scripts src ="./ss_12.js"></scripts>
+    <div onclick="console.log('outer')">
+        outer
+       <div onclick="console.log('inner')">
+           inner
+        <button onclick="console.log('Click Me 4')">Click Me 4</button>
+        
+       </div>
+    </div>
+   <div>
+       <ul id ="todolist">
+           <!-- <li onclick ="this.style.color='red'">working</li> -->
+           <li>Working</li>
+           <li>Jogging</li>
+           <li>Shopping</li>
+       </ul>
+   </div>
+   <form id="myForm">
+       <input type="text"/> 
+       <input type="text"/>
+       <input type="radio"/>
+       <input type="checkbox"/>
+
+
+   </form>
+</body>
+</html>
