@@ -9,9 +9,9 @@ input.addEventListener("keyup", function (event) {
 });
 
 function validateInputNumber() {
-  var inputNumer = document.getElementById("inputText").value;
-  console.log("inputNumber: " + inputNumer);
-  if (inputNumer < 1 || inputNumer > 15) {
+  var inputNumber = document.getElementById("inputText").value;
+  console.log("inputNumber: " + inputNumber);
+  if (inputNumber < 1 || inputNumber > 15) {
     alert("Bạn vừa nhập sai");
   } else {
     tryCount++;
@@ -20,7 +20,7 @@ function validateInputNumber() {
     } else {
       if (inputNumer == luckyNumber) {
         alert("Chúc mừng bạn đã trúng 1 tỷ VNĐ");
-      } else if (inputNumer != luckyNumber && tryCount == 3) {
+      } else if (inputNumber != luckyNumber && tryCount == 3) {
         alert("Chúc bạn may mắn lần sau, Lucky number là: " + luckyNumber);
       }
     }
@@ -30,3 +30,4 @@ function validateInputNumber() {
 document.getElementById("myBtn").onclick = function () {
   validateInputNumber();
 };
+
